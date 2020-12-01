@@ -11,14 +11,22 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MovieListComponent } from './views/home/movie-list/movie-list.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { HttpClientModule } from '@angular/common/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MovieFormDialogComponent } from './views/home/movie-form-dialog/movie-form-dialog.component';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MovieListComponent
+    MovieListComponent,
+    MovieFormDialogComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -26,7 +34,12 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
-    MatTabsModule
+    MatTabsModule,
+    FlexLayoutModule,
+    MatDialogModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

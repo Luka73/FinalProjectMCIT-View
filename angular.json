@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "movieplay"
+  "defaultProject": "movieplay",
+  "cli": {
+    "analytics": "185d6036-abd9-4090-9289-018691de4833"
+  }
 }

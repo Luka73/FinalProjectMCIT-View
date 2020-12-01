@@ -1,0 +1,28 @@
+<h1 mat-dialog-title>New Movie</h1>
+<div mat-dialog-content>
+  <form class="form-add-movie" [formGroup]="movieForm">
+    <mat-form-field class="full-width">
+      <mat-label>Name: </mat-label>
+      <input matInput formControlName="name" name="name">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Price: </mat-label>
+      <input matInput formControlName="price" name="price">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Category: </mat-label>
+      <input matInput formControlName="category" name="category">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Trailer: </mat-label>
+      <input matInput formControlName="trailer" name="trailer">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="cancel()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="createMovie()">Save</button>
+</div>
