@@ -1,7 +1,7 @@
   <mat-tab-group class="tab-group">
   <mat-tab label="Animation">
     <div fxLayout="row wrap" fxLayoutAlign="start center" class="fx-layout">
-      <ng-container *ngFor="let movie of moviesAnimation" fxLayout="row" fxLayoutAlign="start center" class="fx-layout">     
+      <ng-container *ngFor="let movie of moviesAnimation">     
         <mat-card class="mat-card-movie" fxFlex="0 1 calc(33.3% - 11px)"
         fxFlex.lt-md="0 1 calc(50% - 11px)" fxFlex.lt-sm="100%">
             <mat-card-title class="mat-card-title-movie">
@@ -27,7 +27,7 @@
 
   <mat-tab label="Romance">
     <div fxLayout="row wrap" fxLayoutAlign="start center" class="fx-layout">
-      <ng-container *ngFor="let movie of moviesRomance" fxLayout="row" fxLayoutAlign="start center" class="fx-layout">     
+      <ng-container *ngFor="let movie of moviesRomance">     
         <mat-card class="mat-card-movie" fxFlex="0 1 calc(33.3% - 11px)"
         fxFlex.lt-md="0 1 calc(50% - 11px)" fxFlex.lt-sm="100%">
             <mat-card-title class="mat-card-title-movie">
@@ -53,7 +53,7 @@
 
   <mat-tab label="Action">
     <div fxLayout="row wrap" fxLayoutAlign="start center" class="fx-layout">
-      <ng-container *ngFor="let movie of moviesAction" fxLayout="row" fxLayoutAlign="start center" class="fx-layout">     
+      <ng-container *ngFor="let movie of moviesAction">     
         <mat-card class="mat-card-movie" fxFlex="0 1 calc(33.3% - 11px)"
         fxFlex.lt-md="0 1 calc(50% - 11px)" fxFlex.lt-sm="100%">
             <mat-card-title class="mat-card-title-movie">
