@@ -9,7 +9,9 @@ import { ResponsePageable } from '../model/responsePageable.model';
 })
 export class MovieService {
 
-  apiUrl = 'http://localhost:8087/movies';
+  //apiUrl = 'http://localhost:8087/movies';
+  apiUrl = 'https://app-movies-mcit.herokuapp.com/movies';
+  apiUrlById = 'https://app-movies-mcit.herokuapp.com/movie/';
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -27,4 +29,7 @@ export class MovieService {
     return this.httpClient.post<any>(this.apiUrl, movie, this.httpOptions);
   }
 
+  public deleteMovie(movieId: number): Observable<Movie> {
+    return this.httpClient.delete<any>(this.apiUrlById + movieId);
+  }
 }

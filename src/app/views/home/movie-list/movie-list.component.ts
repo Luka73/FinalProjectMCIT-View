@@ -13,14 +13,24 @@ export class MovieListComponent implements OnInit {
   moviesAnimation: Movie[];
   moviesRomance: Movie[];
   moviesAction: Movie[];
+  movies : Movie[];
 
   constructor(
     public movieService: MovieService,
-    public sanitizer: DomSanitizer
+    public sanitizer: DomSanitizer,
     ) { }
 
   ngOnInit(): void {
     this.getMovies();
+  }
+
+  removeMovie(movie): void {
+    if(confirm("Are you sure to delete " + movie.name + "? ")) {
+      console.log("Movie: " + movie.id);
+
+      this.movieService.deleteMovie(movie.id).subscribe(result => {});
+      window.location.reload();
+    }
   }
 
   getMovies(){

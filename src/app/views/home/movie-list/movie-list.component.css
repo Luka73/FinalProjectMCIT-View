@@ -51,3 +51,8 @@
     width: 540px;
     height: 315px;
 }
+
+.btn-clean{
+    border: none;
+    background-color: #fff;
+}

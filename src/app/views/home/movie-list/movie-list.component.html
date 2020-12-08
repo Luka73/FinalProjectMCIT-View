@@ -8,8 +8,8 @@
             <div class="row">
               <p>
                 <span class="movie-name" fxFlex="70" fxLayoutAlign="start center">{{movie.name}}</span>
-                <span fxFlex></span>
                 <span fxFlex="25" fxLayoutAlign="end center" class="movie-price">{{ movie.price | currency:'CAD'}}</span>
+                <button class="btn-clean" (click)="removeMovie(movie)"><mat-icon>clear</mat-icon></button>
               </p>
             </div>
             </mat-card-title>
@@ -34,8 +34,8 @@
             <div class="row">
               <p>
                 <span class="movie-name" fxFlex="70" fxLayoutAlign="start center">{{movie.name}}</span>
-                <span fxFlex></span>
                 <span fxFlex="25" fxLayoutAlign="end center" class="movie-price">{{ movie.price | currency:'CAD'}}</span>
+                <button class="btn-clean" (click)="removeMovie(movie)"><mat-icon>clear</mat-icon></button>
               </p>
             </div>
             </mat-card-title>
@@ -60,8 +60,8 @@
             <div class="row">
               <p>
                 <span class="movie-name" fxFlex="70" fxLayoutAlign="start center">{{movie.name}}</span>
-                <span fxFlex></span>
                 <span fxFlex="25" fxLayoutAlign="end center" class="movie-price">{{ movie.price | currency:'CAD'}}</span>
+                <button class="btn-clean" (click)="removeMovie(movie)"><mat-icon>clear</mat-icon></button>
               </p>
             </div>
             </mat-card-title>

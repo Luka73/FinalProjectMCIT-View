@@ -30,6 +30,7 @@ export class MovieFormDialogComponent implements OnInit {
     this.rest.postMovies(this.movieForm.value).subscribe(result => {});
     this.dialogRef.close(true);
     this.movieForm.reset();
+    window.location.reload();
   }
 
   cancel(): void {
